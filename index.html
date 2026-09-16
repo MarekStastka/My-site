@@ -2,98 +2,287 @@
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Moje osobní portfolio" />
+    <title>Marek Šťástka — IT specialist</title>
 
-    <title>Hlavni stránka</title>
+    <meta
+      name="description"
+      content="Osobní portfolio Marka Šťástky — IT, cybersecurity a projekty."
+    />
+
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="icon" type="image/png" href="/src/assets/logo.jpg" />
   </head>
 
   <body>
-    <!-- HLAVIČKA / MENU -->
-    <header>
-      <nav class="navbar">
-        <a href="/index.html" class="logo">MŠ</a>
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#home" class="logo"> MŠ </a>
 
         <button
           class="menu-toggle"
           id="menu-toggle"
+          type="button"
           aria-label="Otevřít menu"
           aria-expanded="false"
+          aria-controls="nav-links"
         >
-          <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <div class="nav-links" id="nav-links">
-          <a href="/">Domů</a>
-          <a href="src/pages/projects.html">Projekty</a>
-          <a href="src/pages/contact.html">Kontakt</a>
-        </div>
-      </nav>
+        <nav class="navbar" id="nav-links">
+          <a href="#about">O mně</a>
+          <a href="#projects">Projekty</a>
+          <a href="#skills">Dovednosti</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- HLAVNÍ OBSAH -->
     <main>
-      <!-- ÚVOD -->
-      <section class="hero">
-        <div class="hero-text">
-          <h1>Marek Šťástka</h1>
+      <!-- ================= HOME ================= -->
 
-          <!-- PROFILOVÁ FOTKA -->
-          <div class="hero-image">
-            <img src="/src/assets/hero.png" alt="Moje profilová fotografie" />
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">IT • CYBERSECURITY • DEVELOPMENT</p>
+
+          <h1>
+            Marek<br />
+            <span>Šťástka</span>
+          </h1>
+
+          <p class="hero-description">
+            IT student se zájmem o kybernetickou bezpečnost, vývoj webů a
+            moderní technologie.
+          </p>
+
+          <a href="#about" class="hero-link">
+            Více o mně
+            <span>↓</span>
+          </a>
+        </div>
+
+        <div class="hero-image">
+          <img src="/src/assets/hero.png" alt="Marek Šťástka" />
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+
+      <section class="page-section about-section" id="about">
+        <div class="section-header">
+          <p class="section-number">01</p>
+
+          <h2>O mně</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-intro">
+            <p>
+              Jsem student IT se zájmem o technologie, kybernetickou bezpečnost
+              a tvorbu webových aplikací.
+            </p>
+          </div>
+
+          <div class="about-text">
+            <p>
+              Baví mě objevovat nové technologie, řešit technické problémy a
+              vytvářet věci, které mají smysl. Ve volném čase se věnuji
+              především programování, počítačovým sítím a oblasti cybersecurity.
+            </p>
+
+            <p>
+              Aktuálně se zaměřuji na rozvoj svých znalostí v oblasti webového
+              vývoje, Linuxu, sítí a bezpečnosti informačních systémů.
+            </p>
+
+            <p>
+              Mým cílem je neustále se zlepšovat, získávat praktické zkušenosti
+              a pracovat na zajímavých technologických projektech.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- O MNĚ -->
-      <section class="about">
-        <h2>O mně</h2>
+      <!-- ================= SKILLS ================= -->
 
-        <p>
-          Jako absolvent SŠ oboru IT se zaměřením na kybernetickou bezpečnost
-          toho umím opravdu hodně a v dnešním digitálním světě se neztratím.
-          Dokážu navrhovat a spravovat zabezpečené počítačové sítě, odhalovat
-          skryté zranitelnosti dřív, než je zneužijí útočníci, a provádět
-          penetrační testy. Mám přehled o tom, jak funguje šifrování, jak
-          správně nastavit firewally a systémy pro detekci narušení, a vím, jak
-          reagovat na kybernetické incidenty nebo útoky typu ransomware. Rozumím
-          také zásadám bezpečného kódování, takže dokážu odhalit chyby v
-          aplikacích, a orientuji se v legislativě a standardech na ochranu
-          osobních údajů, jako je GDPR. Díky tomu dokážu propojovat technickou
-          ochranu dat s bezpečným chováním lidí ve firmě a efektivně chránit
-          cenné hodnoty před hrozbami.
-        </p>
+      <section class="page-section skills-section" id="skills">
+        <div class="section-header">
+          <p class="section-number">02</p>
+
+          <h2>Dovednosti</h2>
+        </div>
+
+        <div class="skills-content">
+          <p class="section-description">
+            Přehled mých dovedností a technologií, se kterými pracuji.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+
+            <div class="skill-card">CSS</div>
+
+            <div class="skill-card">JavaScript</div>
+
+            <div class="skill-card">Python</div>
+
+            <div class="skill-card">C#</div>
+
+            <div class="skill-card">Linux</div>
+
+            <div class="skill-card">Networking</div>
+
+            <div class="skill-card">Cybersecurity</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+
+      <section class="page-section projects-section" id="projects">
+        <div class="section-header">
+          <p class="section-number">03</p>
+
+          <h2>Projekty</h2>
+        </div>
+
+        <div class="projects-content">
+          <p class="section-description">
+            Výběr projektů, na kterých pracuji nebo jsem pracoval.
+          </p>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-top">
+                <span>01</span>
+                <span>WEB</span>
+              </div>
+
+              <h3>Portfolio</h3>
+
+              <p>Osobní portfolio vytvořené pomocí HTML, CSS a JavaScriptu.</p>
+
+              <div class="project-bottom">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span>02</span>
+                <span>CYBERSECURITY</span>
+              </div>
+
+              <h3>Cybersecurity</h3>
+
+              <p>
+                Projekty a experimenty zaměřené na počítačové sítě, bezpečnost a
+                Linux.
+              </p>
+
+              <div class="project-bottom">
+                <span>Linux</span>
+                <span>Networks</span>
+                <span>Security</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span>03</span>
+                <span>COMING SOON</span>
+              </div>
+
+              <h3>Další projekt</h3>
+
+              <p>Další projekty budou postupně přibývat.</p>
+
+              <div class="project-bottom">
+                <span>SOON</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+
+      <section class="page-section contact-section" id="contact">
+        <div class="section-header">
+          <p class="section-number">04</p>
+
+          <h2>Kontakt</h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-intro">
+            <p class="contact-title">
+              Pojďme se<br />
+              <span>spojit.</span>
+            </p>
+
+            <p class="contact-description">
+              Pokud máš zajímavý projekt, chceš se na něco zeptat nebo se jen
+              spojit, můžeš mě najít na některém z níže uvedených kontaktů.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:marek.stastka.023@pslib.cz" class="contact-link">
+              <span class="contact-label"> EMAIL </span>
+
+              <span class="contact-value"> marek.stastka.023@pslib.cz </span>
+
+              <span class="contact-arrow"> ↗ </span>
+            </a>
+
+            <a
+              href="https://github.com/MarekStastka"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+            >
+              <span class="contact-label"> GITHUB </span>
+
+              <span class="contact-value"> github.com/MarekStastka </span>
+
+              <span class="contact-arrow"> ↗ </span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/stastkyc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+            >
+              <span class="contact-label"> INSTAGRAM </span>
+
+              <span class="contact-value"> @stastkyc </span>
+
+              <span class="contact-arrow"> ↗ </span>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <!-- PATIČKA -->
-    <footer>
-      <p>© 2026 Marek Šťástka</p>
+    <!-- ================= FOOTER ================= -->
 
-      <div>
-        <a
-          href="https://github.com/MarekStastka"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span> © 2026 Marek Šťástka </span>
 
-        <a
-          href="https://www.instagram.com/stastkyc/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
+        <span> Built with HTML, CSS & JS </span>
       </div>
     </footer>
 
-    <!-- JAVASCRIPT -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
